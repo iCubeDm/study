@@ -10,3 +10,7 @@ Python:
 
 Node.js:
  * [Node.js для начинающих](http://www.nodebeginner.ru/#javascript-and-nodejs)
+ 
+
+Java:
+ * [Java Programmer I](https://docs.oracle.com/javase/tutorial/extra/certification/javase-7-programmer1.html)
