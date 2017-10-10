@@ -1,4 +1,4 @@
-package com.icubedm.study_tasks;
+package com.icubedm.study_tasks.interview;
 
 import java.io.IOException;
 import java.util.HashSet;
@@ -12,7 +12,7 @@ public class AnagramStringSearch {
         String prefix = "abc";
         Set<String> permutations = new HashSet<>(); // aka all possible anagrams
         permutation(prefix, "", permutations);
-        int count = permutations.parallelStream().mapToInt(permutation -> findOccurences(source, permutation)).sum();
+        int count = permutations.parallelStream().mapToInt(permutation -> findOccurrences(source, permutation)).sum();
 
         System.out.println(count);
     }
@@ -29,7 +29,7 @@ public class AnagramStringSearch {
         }
     }
 
-    private static int findOccurences(String source, String substr) {
+    private static int findOccurrences(String source, String substr) {
         int count = 0;
         int idx = 0;
         while ((idx = source.indexOf(substr, idx)) != -1) {

@@ -1,16 +1,15 @@
-package com.icubedm.study_tasks;// you can also use imports, for example:
-// import java.util.*;
+package com.icubedm.study_tasks.interview;
 
 // you can write to stdout for debugging purposes, e.g.
 // System.out.println("this is a debug message");
 
-class ZTask2 {
+class WinterSummer {
 
     public static void main(String[] args) {
-        int[] arr = {-1_000_000_000,1_000_000_001};
 //        int[] arr = {-5, -5, -5, -42, 6, 12};
+        int[] arr = {-3, 5, 10, -4, 6, 18, 19, 13};
 
-        ZTask2 sol = new ZTask2();
+        WinterSummer sol = new WinterSummer();
         System.out.println(sol.solution(arr));
     }
 
@@ -25,8 +24,11 @@ class ZTask2 {
         int potentialMaxWinterTemp = T[0];
 
         for (int i = 0; i < T.length; i++) {
-            potentialMaxWinterTemp = potentialMaxWinterTemp < T[i] ? T[i] : potentialMaxWinterTemp;
-            if (T[i] <= maxWinterTemp) {
+            int currentTemp = T[i];
+            potentialMaxWinterTemp = potentialMaxWinterTemp < currentTemp
+                    ? currentTemp
+                    : potentialMaxWinterTemp;
+            if (currentTemp <= maxWinterTemp) {
                 maxWinterIdx = i;
                 maxWinterTemp = potentialMaxWinterTemp;
             }

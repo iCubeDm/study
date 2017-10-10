@@ -1,4 +1,4 @@
-package com.icubedm.study_tasks;
+package com.icubedm.study_tasks.interview;
 
 // you can also use imports, for example:
 // import java.util.*;
@@ -44,7 +44,7 @@ Warsaw08.jpg
 Warsaw04.png
 Warsaw05.png
 Warsaw10.jpg*/
-class ZTask1 {
+class CityPhotos {
 
     public static void main(String[] args) {
         String[] array = {
@@ -65,7 +65,7 @@ class ZTask1 {
                 "g.jpg, Warsaw, 2016-02-29 22:13:11",
         };
 
-        String sol = new ZTask1().solution("photo.jpg, Warsaw, 2013-09-05 14:08:15\n" +
+        String sol = new CityPhotos().solution("photo.jpg, Warsaw, 2013-09-05 14:08:15\n" +
                 "john.png, London, 2015-06-20 15:13:22\n" +
                 "myFriends.png, Warsaw, 2013-09-05 14:07:13\n" +
                 "Eiffel.jpg, Paris, 2015-07-23 08:03:02\n" +

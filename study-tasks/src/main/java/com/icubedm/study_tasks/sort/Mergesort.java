@@ -1,4 +1,4 @@
-package com.icubedm.study_tasks;
+package com.icubedm.study_tasks.sort;
 
 import java.util.Arrays;
 

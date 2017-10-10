@@ -1,8 +1,8 @@
-package com.icubedm.study_tasks;
+package com.icubedm.study_tasks.interview;
 
 import java.util.stream.IntStream;
 
-public class ZTestTask {
+public class FirstUntouched {
 
 
     public static void main(String[] args) {
@@ -11,8 +11,8 @@ public class ZTestTask {
     }
 
     private static int solution() {
-        int[] A = {1, 3, 6, 4, 1, 100002 , 100001};
-        int[] SORT = IntStream.rangeClosed(1, 1_000_000).toArray();
+        int[] A = {1, 3, 6, 4, 1};
+        int[] SORT = IntStream.rangeClosed(1, 10).toArray();
         if (A == null || A.length == 0)
             throw new RuntimeException("Wrong input");
 
