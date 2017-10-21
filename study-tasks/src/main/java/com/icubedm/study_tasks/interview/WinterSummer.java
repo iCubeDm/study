@@ -3,6 +3,9 @@ package com.icubedm.study_tasks.interview;
 // you can write to stdout for debugging purposes, e.g.
 // System.out.println("this is a debug message");
 
+/*
+Zalando task
+ */
 class WinterSummer {
 
     public static void main(String[] args) {

@@ -13,6 +13,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /*
+
+Zalando task
+
 photo.jpg, Warsaw, 2013-09-05 14:08:15
 john.png, London, 2015-06-20 15:13:22
 myFriends.png, Warsaw, 2013-09-05 14:07:13
