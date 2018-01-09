@@ -6,12 +6,11 @@ Zalando task
 class WinterSummerAnton {
 
     public static void main(String[] args) {
-//        int[] arr = {-5, -5, -5, -42, 6, 12}; // 3
-//        int[] arr = {-3, 5, 10, -4, 6, 18, 19, 13}; // 7
-//        int[] arr = {1, 4, 2, 3, 5, 6}; // 3
-        int[] arr = {-100, 100}; // 1
 
-        System.out.println(solution(arr));
+        System.out.println(solution(new int[]{5, -2, 3, 8, 6}));// 3
+        System.out.println(solution(new int[]{-5, -5, -5, -42, 6, 12}));// 4
+        System.out.println(solution(new int[]{-100, 100}));// 1
+        System.out.println(solution(new int[]{-3, 5, 10, -4, 6, 18, 19, 13}));// 5
     }
 
     public static int solution(int[] arr) {
@@ -22,16 +21,22 @@ class WinterSummerAnton {
 
         int maxWinterInd = 0;
         int maxWinterValue = arr[0];
+        int possibleMaxWinterValue = arr[0];
 
         for(int i = 0; i < arr.length; i++) {
 
-            if(arr[i] > maxWinterValue) {
-                maxWinterValue = arr[i];
-            } else {
+            int currentValue = arr[i];
+
+            if(possibleMaxWinterValue < currentValue) {
+                possibleMaxWinterValue = currentValue;
+            }
+
+            if(currentValue <= maxWinterValue) {
                 maxWinterInd = i;
+                maxWinterValue = possibleMaxWinterValue;
             }
         }
 
-        return maxWinterInd;
+        return maxWinterInd + 1;
     }
 }

@@ -73,7 +73,7 @@ class CityPhotosAnton {
 
     private static String solution(String photos) {
 
-        if(photos == null) {
+        if(photos == null || photos.length() == 0) {
             return "";
         }
 

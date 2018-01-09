@@ -9,14 +9,14 @@ Zalando task
 class WinterSummer {
 
     public static void main(String[] args) {
-//        int[] arr = {-5, -5, -5, -42, 6, 12};
-        int[] arr = {-3, 5, 10, -4, 6, 18, 19, 13};
 
-        WinterSummer sol = new WinterSummer();
-        System.out.println(sol.solution(arr));
+        System.out.println(solution(new int[]{5, -2, 3, 8, 6}));// 3
+        System.out.println(solution(new int[]{-5, -5, -5, -42, 6, 12}));// 4
+        System.out.println(solution(new int[]{-100, 100}));// 1
+        System.out.println(solution(new int[]{-3, 5, 10, -4, 6, 18, 19, 13}));// 5
     }
 
-    public int solution(int[] T) {
+    public static int solution(int[] T) {
         // write your code in Java SE 8
 
         if(T == null || T.length < 2)
